@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Contrato {
+public class Contrato { // classe onde tera os atributos principais que serao modificados
 	private Integer Numero;
 	private Date Data;
 	private double valorTotal;
@@ -14,7 +14,7 @@ public class Contrato {
 	public Integer getNumero() {
 		return Numero;
 	}
-	
+
 	public Contrato() {
 	}
 
@@ -47,6 +47,5 @@ public class Contrato {
 	public List<Parcelamento> getParcelamento() {
 		return parcelamento;
 	}
-
 
 }

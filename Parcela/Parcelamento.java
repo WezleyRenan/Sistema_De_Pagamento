@@ -3,9 +3,9 @@ package Parcela;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Parcelamento {
+public class Parcelamento { //classe responsavel por formatar e abrigar o arraylist
 
-	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 	private Date data;
 	private double quantia;
@@ -37,7 +37,7 @@ public class Parcelamento {
 
 	@Override
 	public String toString() {
-		return sdf.format(data) + "  -  " + quantia;
+		return sdf.format(data) + "  -  " + String.format("%.2f", quantia);
 	}
 
 }
